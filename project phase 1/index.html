@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="navbar">
+    <a href="">
+      <img src="images/home_button.png" alt="Home" id="Home" />
+    </a>
+    <img src="" alt="" id="Logo" />
+  </div>
+
+  <p>QUIZ TIME!</p>
+  <div class="main-container">
+    <div class="age-box" id="container-1" onclick="open1()">
+      <p id="age">I am</p><br />
+      <p id="age">8 - 12 years old</p>
+    </div>
+    <div class="age-box" id="container-2" onclick="open2()">
+      <p id="age">I am</p><br />
+      <p id="age">12 - 16 years old</p>
+    </div>
+  </div>
+
+  <script>
+    function open1() {
+      window.open("8-12.html", "_self"); 
+    }
+    function open2() {
+      window.open("12-16.html", "_self"); 
+    }
+  </script>
+</body>
+</html>

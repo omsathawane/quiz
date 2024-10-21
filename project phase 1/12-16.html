@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="12-16.css">
+    <title>LittleVoices-Quiz</title>
+
+</head>
+
+<body>
+    <div id="nav">
+       <a href="index.html"> <img src="images/home_button.png" id = "home" alt=""></a>
+        <img src=""  id = "logo">
+        
+    </div>
+	<div class="panel">
+		<div class="question" id="ques"></div>
+		<div id="ans-image">
+            <div id="image"><img src="images/mascot2.png"mascot_pose_1" width="80%" ></div>
+
+            <div id="ans"> 
+
+                <textarea type="text"  id="opt1" onclick="returnOptionNumber(0)" readonly="readonly"></textarea>
+                <textarea type="text"  id="opt2" onclick="returnOptionNumber(1)" readonly="readonly"></textarea>
+              
+        
+                <div id="buttons">
+                    <div id="arrow-l" onclick="prevQuestion()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    
+                    <button type="button" id="button" onclick="checkAns()">Submit</button>
+                   
+                        <div id="arrow-r" onclick="nextQuestion()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                
+            </div>
+        </div>
+           
+		
+	</div>
+    <div id="answers" onclick="offClick()">
+        <div id="right_wrong"></div>
+        
+        <div id="text_image">
+            <img src="images/mascot2pose2.png" alt="" id="mascot_pose_2">
+
+            <div id = "right">right to health</div>
+            <div id="text"> ipsum dolor sit amet, consectetur adipisicing elit. Beatae, error. Iusto, sed. Aperiam culpa adipisci qui sequi, pariatur beatae porro autem blanditiis nobis ullam deserunt dicta, quos omnis, soluta voluptates!</div>
+            
+        </div>
+    </div>
+    <script src="12-16.js"></script>
+
+</body>
+
+</html>

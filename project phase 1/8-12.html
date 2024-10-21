@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="8-12.css" />
+  <title>Quiz</title>
+</head>
+<body>
+  <div id="nav">
+    <a href="index.html">
+      <img src="C:/Users/91983/OneDrive/Desktop/project phase 1/images/home_button.png" id="home" alt="Home" />
+    </a>
+    <img src="" id="logo" alt="Logo" />
+  </div>
+
+  <div class="panel">
+    <div class="question" id="ques"></div>
+    <div id="ans-image">
+      <div id="image">
+        <img src="C:/Users/91983/OneDrive/Desktop/project phase 1/images/mascot1.png" id="mascot_pose_1" width="80%" />
+      </div>
+      <div id="ans">
+        <textarea type="text" id="opt1" onclick="returnOptionNumber(0)" readonly></textarea>
+        <textarea type="text" id="opt2" onclick="returnOptionNumber(1)" readonly></textarea>
+
+        <div id="buttons">
+          <div id="arrow-l" onclick="prevQuestion()">
+            <span></span><span></span><span></span>
+          </div>
+
+          <button type="button" id="button" onclick="checkAns()">Submit</button>
+
+          <div id="arrow-r" onclick="nextQuestion()">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="answers" onclick="offClick()">
+    <div id="right_wrong"></div>
+
+    <div id="text_image">
+      <img src="images/mascot2pose2.png" alt="" id="mascot_pose_2" />
+      <div id="right">Right to health</div>
+      <div id="text">
+        Ipsum dolor sit amet, consectetur adipisicing elit. Beatae, error. Iusto, sed. Aperiam culpa adipisci qui sequi, pariatur beatae porro autem blanditiis nobis ullam deserunt dicta, quos omnis, soluta voluptates!
+      </div>
+    </div>
+  </div>
+
+  <script src="8-12.js"></script>
+</body>
+</html>
